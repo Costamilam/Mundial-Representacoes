@@ -124,7 +124,7 @@
                             A Merco Part's é uma empresa brasileira fabricante de Juntas automotivas, estando a mais de 16 anos no mercado, com produtos de ótima qualidade, devido à utilização de matéria prima de primeira linha, equipamentos modernos e profissionais qualificados, atendendo sempre as especificações técnicas da indústria automotiva. Temos uma Linha completa de juntas e Retentores para vans, pick - ups, linha leve nacional e importada. Dentre os produtos comercializados, podemos citar jogos de juntas completos, kit juntas superiores, juntas do cabeçote, tampa de válvulas, coletores de escape/admissão, saídas de escapamentos, cárter.
                         </section>
                         <section class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="./catalogos/mercoparts.pdf" target="_blank">Ver Catálogo</a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./catalogos/mercoparts.pdf" target="_blank">Ver Catálogo</a>
                         </section>
                     </section>
 
@@ -138,7 +138,7 @@
                             A YIMING PARTS é uma indústria de auto peças fundada em 1996 que possui uma equipe altamente qualificada com profundo conhecimento dos produtos que fabrica, desenvolvendo soluções inovadoras com o apoio de equipamentos de ultima geração, incluindo um rígido controle da matéria prima utilizada na fabricação dos seus produtos. Seus produtos tais como bomba d'água, amortecedor, junta homocinética, bandejas, cruzetas, trizetas, mola gás e terminais são fabricados visando qualidade e bom desempenho. A YIMING PARTS tem como objetivo o compromisso com a qualidade, não só de seus produtos, mas na totalidade de seus processos industriais e comerciais, visando sempre à satisfação constante de seus clientes.
                         </section>
                         <section class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="./catalogos/yimingparts.pdf" target="_blank">Ver Catálogo</a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./catalogos/yimingparts.pdf" target="_blank">Ver Catálogo</a>
                         </section>
                     </section>
 
@@ -152,8 +152,8 @@
                             A Notus é uma empresa especializada nas áreas de arrefecimento e climatização de veículos automotores, oferecendo, a mais de 10 anos, atendimento personalizado, através de suporte técnico, desenvolvimento de estratégias para atender as necessidades do mercado nacional e internacional.
                         </section>
                         <section class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="./catalogos/notus_radiadores.pdf" target="_blank">Radiadores</a>
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="./catalogos/notus_eletro.pdf" target="_blank">Eletroventiladores</a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./catalogos/notus_radiadores.pdf" target="_blank">Radiadores</a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./catalogos/notus_eletro.pdf" target="_blank">Eletroventiladores</a>
                         </section>
                     </section>
 
@@ -165,7 +165,7 @@
                             A Metan trabalha a mais de 40 anos com solida experiência no mercado de peças de reposição, na linha de cabeçotes Volkswagem.
                         </section>
                         <section class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="./catalogos/metan.pdf" target="_blank">Ver Catálogo</a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./catalogos/metan.pdf" target="_blank">Ver Catálogo</a>
                         </section>
                     </section>
 
@@ -177,7 +177,7 @@
                             A Brunko é fabricante de blocos e cabeçotes Mercedes, sendo referência em qualidade e atendimento. Possui infra-estrutura precisa e o conhecimento das necessidades de seus consumidores para atender e superar suas expectativas.
                         </section>
                         <section class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="./catalogos/brunko.pdf" target="_blank">Ver Catálogo</a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./catalogos/brunko.pdf" target="_blank">Ver Catálogo</a>
                         </section>
                     </section>
 
@@ -191,7 +191,7 @@
                             A NDflex é uma indústria de Mangueiras e Tubos Flexíveis para a Linha Automotiva e Industrial. Em constante evolução, desenvolve mangueiras para sistemas de alimentação e retorno de combustíveis (gasolina, etanol, diesel) para veículos automotivos, além de produtos para indústria como mangueiras e tubos para sistemas pneumáticos e hidráulicos.
                         </section>
                         <section class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="./catalogos/ndflex.pdf" target="_blank">Ver Catálogo</a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./catalogos/ndflex.pdf" target="_blank">Ver Catálogo</a>
                         </section>
                     </section>
 
@@ -203,7 +203,7 @@
                             A FortMetal fabrica bandejas de suspensão dentro dos mais rígidos padrões de qualidade e com materiais de primeira linha.
                         </section>
                         <section class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="./catalogos/fortmetal.pdf" target="_blank">Ver Catálogo</a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./catalogos/fortmetal.pdf" target="_blank">Ver Catálogo</a>
                         </section>
                     </section>
                 </article>
@@ -241,7 +241,7 @@
                                 <label class="mdl-textfield__label" for="message">Mensagem *</label>
                             </div>
 
-                            <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">Enviar Mensagem</button>
+                            <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Enviar Mensagem</button>
                         </form>
                     </section>
                 </article>
