@@ -1,0 +1,120 @@
+.mdl-layout {
+    background-image: 
+        repeating-linear-gradient(90deg, transparent 0px, transparent 3px, rgba(0, 0, 0, 0.15) 3px, rgba(0, 0, 0, 0.15) 4px), 
+        repeating-linear-gradient(0deg, transparent 0px, transparent 3px, rgba(0, 0, 0, 0.15) 3px, rgba(0, 0, 0, 0.15) 4px),
+        linear-gradient(to right bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25)),
+        url('./images/background.jpg');
+    background-position: center; 
+    background-size: cover;
+}
+
+#layout-padding > article, #layout-padding > div > article {
+    margin-top: 150px !important;
+    margin-bottom: 150px !important;
+}
+
+.mdl-card {
+    margin: 35px auto;
+}
+
+.mdl-card__media {
+    background-color: #FFFFFF;
+    margin: auto;
+    max-width: 80%;
+    min-height: 150px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.article-image {
+    max-height: 100px;
+    max-width: 100%;
+}
+figure {
+    margin: 0;
+}
+
+.mdl-card__supporting-text {
+    text-align: justify;
+    width: auto;
+}
+
+#mvv {
+    align-items: flex-start;
+}
+#mvv hgroup {
+    margin: 0 auto;
+}
+#mvv .mdl-card__supporting-text {
+    text-align: center;
+}
+@media (min-width: 840px) { 
+    #mvv > section:nth-child(2) {
+        margin-top: -50px;
+    }
+}
+
+#contact p {
+    width: 95%;
+    margin: auto;
+}
+#contact form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#contact form > div {
+    display: flex;
+    flex: 0 1 45%;
+}
+#contact form > div:last-of-type {
+    flex-basis: 95%;
+}
+@media (max-width: 839px) { 
+    #contact form > div {
+        flex-basis: 95%;
+    }
+}
+
+.mdl-mega-footer__right-section > span {
+    font-size: 16px;
+}
+.fa {
+    padding: 7px;
+    font-size: 16px;
+    width: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    height: auto;
+    border-radius: 50%;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa-skype {
+    background: #00aff0;
+    color: white;
+}
+.fa-envelope, .fa-phone {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(66,66,66,1); 
+    border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.5);
+}
