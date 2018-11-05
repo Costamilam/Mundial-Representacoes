@@ -1,6 +1,8 @@
 # Mundial Representações
 
-Primeira versão do novo site estático da empresa Mundial Representações com:
+Novo site estático da empresa Mundial Representações
+
+**Recursos**
 
  - O que é a empresa
  - Missão, visão e valores
