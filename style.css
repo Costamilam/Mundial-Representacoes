@@ -28,6 +28,127 @@ body {
     margin-bottom: 150px !important;
 }
 
+.fadeInUp {
+    -o-animation-name: fadeInUp;
+    -o-animation-duration: 1s;
+    -o-animation-fill-mode: both;
+    -o-animation-iteration-count: 1;
+    -moz-animation-name: fadeInUp;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-iteration-count: 1;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+.mdl-card {
+    -o-transition-duration: 1s;
+    -o-transition-timing-function: ease-in-out;
+    -o-transition-property: z-index, box-shadow, -o-transform, -ms-transform, -moz-transform, -webkit-transform, transform;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: ease-in-out;
+    -moz-transition-property: z-index, box-shadow, -o-transform, -ms-transform, -moz-transform, -webkit-transform, transform;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-property: z-index, box-shadow, -o-transform, -ms-transform, -moz-transform, -webkit-transform, transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-property: z-index, box-shadow, -o-transform, -ms-transform, -moz-transform, -webkit-transform, transform;
+}
+.mdl-card:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2);
+    z-index: 2;
+}
+#layout-padding > article:not(:nth-child(5)):not(#mvv),
+#layout-padding > article:nth-child(5) > section,
+#mvv > section {
+    opacity: 0;
+}
+@media (min-width: 840px) {
+    #mvv > section:not(:nth-child(2)) {
+        -o-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+    }
+}
+@-o-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -o-transform: translate3d(0,100%,0);
+        -ms-transform: translate3d(0,100%,0);
+        -moz-transform: translate3d(0,100%,0);
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: none;
+        -ms-transform: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@-moz-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -o-transform: translate3d(0,100%,0);
+        -ms-transform: translate3d(0,100%,0);
+        -moz-transform: translate3d(0,100%,0);
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: none;
+        -ms-transform: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -o-transform: translate3d(0,100%,0);
+        -ms-transform: translate3d(0,100%,0);
+        -moz-transform: translate3d(0,100%,0);
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: none;
+        -ms-transform: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -o-transform: translate3d(0,100%,0);
+        -ms-transform: translate3d(0,100%,0);
+        -moz-transform: translate3d(0,100%,0);
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: none;
+        -ms-transform: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
 .mdl-card {
     margin: 35px auto;
 }
@@ -126,9 +247,10 @@ body > iframe {
     height: 300px;
 }
 #carousel > .swiper-container > .swiper-wrapper > .swiper-slide > img {
-    width: 90%;
     margin: 0 5%;
+    width: 90%;
     height: auto;
+    max-height: 100%;
     position: absolute;
     top: 50%;
     -o-transform: translateY(-50%);

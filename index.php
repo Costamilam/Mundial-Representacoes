@@ -21,7 +21,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
 
     <link type="text/css" rel="stylesheet" href="./style.css">
-    <link type="text/css" rel="stylesheet" href="./animate.css">
 
     <script defer type="text/javascript" src="./main.js"></script>
 
