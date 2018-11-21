@@ -1,98 +1,66 @@
 .fadeInUp {
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+    -o-animation-name: fadeInUp;
+    -o-animation-duration: 1s;
+    -o-animation-fill-mode: both;
+    -o-animation-iteration-count: 1;
+    -moz-animation-name: fadeInUp;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: 1;
     -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
     -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
     -webkit-animation-iteration-count: 1;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
     animation-iteration-count: 1;
 }
 .mdl-card {
-    -o-transition: transform 1s ease-in-out, z-index 1s ease-in-out,  box-shadow 1s;
-    -moz-transition: transform 1s ease-in-out, z-index 1s ease-in-out,  box-shadow 1s;
-    -webkit-transition: transform 1s ease-in-out, z-index 1s ease-in-out,  box-shadow 1s;
-    transition: transform 1s ease-in-out, z-index 1s ease-in-out,  box-shadow 1s;
+    -o-transition-duration: 1s;
+    -o-transition-timing-function: ease-in-out;
+    -o-transition-property: z-index, box-shadow, -o-transform, -ms-transform, -moz-transform, -webkit-transform, transform;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: ease-in-out;
+    -moz-transition-property: z-index, box-shadow, -o-transform, -ms-transform, -moz-transform, -webkit-transform, transform;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-property: z-index, box-shadow, -o-transform, -ms-transform, -moz-transform, -webkit-transform, transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-property: z-index, box-shadow, -o-transform, -ms-transform, -moz-transform, -webkit-transform, transform;
 }
 .mdl-card:hover {
     box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2);
     z-index: 2;
 }
+#layout-padding > article:not(:nth-child(5)):not(#mvv),
+#layout-padding > article:nth-child(5) > section,
+#mvv > section {
+    opacity: 0;
+}
+@media (min-width: 840px) {
+    #mvv > section:not(:nth-child(2)) {
+        -o-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+    }
+}
 @keyframes fadeInUp {
     0% {
         opacity: 0;
+        -o-transform: translate3d(0,100%,0);
+        -ms-transform: translate3d(0,100%,0);
+        -moz-transform: translate3d(0,100%,0);
         -webkit-transform: translate3d(0,100%,0);
         transform: translate3d(0,100%,0);
     }
     100% {
         opacity: 1;
+        -o-transform: none;
+        -ms-transform: none;
+        -moz-transform: none;
         -webkit-transform: none;
         transform: none;
     }
-}
-.delay-1s {
-    -o-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-}
-.delay-2s {
-    -o-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-}
-.delay-3s {
-    -o-animation-delay: 3s;
-    -moz-animation-delay: 3s;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
-}
-.delay-3-5s {
-    -o-animation-delay: 3.5s;
-    -moz-animation-delay: 3.5s;
-    -webkit-animation-delay: 3.5s;
-    animation-delay: 3.5s;
-}
-.delay-4s {
-    -o-animation-delay: 4s;
-    -moz-animation-delay: 4s;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
-}
-.delay-5-2s {
-    -o-animation-delay: 5.2s;
-    -moz-animation-delay: 5.2s;
-    -webkit-animation-delay: 5.2s;
-    animation-delay: 5.2s;
-}
-.delay-5-4s {
-    -o-animation-delay: 5.4s;
-    -moz-animation-delay: 5.4s;
-    -webkit-animation-delay: 5.4s;
-    animation-delay: 5.4s;
-}
-.delay-5-6s {
-    -o-animation-delay: 5.6s;
-    -moz-animation-delay: 5.6s;
-    -webkit-animation-delay: 5.6s;
-    animation-delay: 5.6s;
-}
-.delay-5s {
-    -o-animation-delay: 5s;
-    -moz-animation-delay: 5s;
-    -webkit-animation-delay: 5s;
-    animation-delay: 5s;
-}
-.delay-6s {
-    -o-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -webkit-animation-delay: 6s;
-    animation-delay: 6s;
-}
-.delay-7s {
-    -o-animation-delay: 7s;
-    -moz-animation-delay: 7s;
-    -webkit-animation-delay: 7s;
-    animation-delay: 7s;
 }

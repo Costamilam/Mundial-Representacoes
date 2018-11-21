@@ -1,44 +1,60 @@
-const carousel = document.querySelector('#carousel > section:first-child > figure');
-let selectedIndex = 0;
+function fade() {
+    for (
+        const element of document.querySelectorAll(`
+            #layout-padding > article:not(:nth-child(5)):not(#mvv),
+            #layout-padding > article:nth-child(5) > section,
+            #mvv > section
+        `)
+    ) {
+        const boundingClientRect = element.getBoundingClientRect();
 
-function rotateCarousel() {
-    carousel.style.transform = `translateZ(-390px) rotateY(${selectedIndex / 6 * -360}deg)`;
-}
-
-document.getElementById('previous-button').addEventListener('click', function() {
-    selectedIndex--;
-    rotateCarousel();
-});
-
-document.getElementById('next-button').addEventListener('click', function() {
-    selectedIndex++;
-    rotateCarousel();
-});
-
-/*
-HTMLElement.prototype.isVisible = function() {
-    const position = this.getClientRects()[0];
-    return position.top >= 0 && position.top <= window.innerHeight;
-}
-
-const fade = document.querySelectorAll('article');
-
-function handler() {
-    for(const element of fade) {
-        console.log(element);
-        element.style.oppacity = element.isVisible() ? '0 !important' : '1 !important';
+        if (!element.classList.contains('fadeInUp') && boundingClientRect.top >= 0 && boundingClientRect.top <= window.innerHeight) {
+            element.classList.add('fadeInUp');
+        }
     }
 }
 
+fade();
+
 if (window.addEventListener) {
-    window.addEventListener('DOMContentLoaded', handler); 
-    window.addEventListener('load', handler); 
-    window.addEventListener('scroll', handler); 
-    window.addEventListener('resize', handler); 
-} else if (window.attachEvent)  {
-    window.attachEvent('onDOMContentLoaded', handler);
-    window.attachEvent('onload', handler);
-    window.attachEvent('onscroll', handler);
-    window.attachEvent('onresize', handler);
+    window.addEventListener('scroll', fade);
+    window.addEventListener('resize', fade);
+} else if (window.attachEvent) {
+    window.attachEvent('onscroll', fade);
+    window.attachEvent('resize', fade);
+} else {
+    window.onscroll = fade;
+    window.onresize = fade;
 }
-*/
+
+new Swiper('#carousel > .swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    slidesPerView: 3,
+    freeMode: false,
+    autoplay: true,
+    loop: true,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: -50,
+        depth: 300,
+        modifier: 1,
+        slideShadows: true
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    a11y: {
+        enabled: true,
+        prevSlideMessage: 'Slide anterior',
+        nextSlideMessage: 'Próximo slide',
+        firstSlideMessage: 'Primeiro slide',
+        lastSlideMessage: 'Último slide',
+        paginationBulletMessage: 'Ir para o slide {{index}}'
+    }
+});
