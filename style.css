@@ -183,6 +183,50 @@ figure {
     width: auto;
 }
 
+body > a {
+    white-space: nowrap;
+    line-height: 56px !important;
+    position: fixed !important;
+    top: 50px;
+    right: 20px;
+    width: 56px !important;
+    overflow: hidden;
+    background-color: #3f51b5 !important;
+    -o-transition-property: box-shadow, border-radius, width !important;
+    -moz-transition-property: box-shadow, border-radius, width !important;
+    -webkit-transition-property: box-shadow, border-radius, width !important;
+    transition-property: box-shadow, border-radius, width !important;
+    -o-transition-duration: 0.5s !important;
+    -moz-transition-duration: 0.5s !important;
+    -webkit-transition-duration: 0.5s !important;
+    transition-duration: 0.5s !important;
+}
+body > a:hover {
+    border-radius: 15px;
+    width: 280px !important;
+}
+body > a:hover > .mdl-button__ripple-container {
+    border-radius: 15px;
+}
+body > a > i {
+    -o-transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    -moz-transform: rotateZ(90deg);
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+    width: 56px;
+}
+body > a > span:first-of-type {
+    width: 0px;
+    -o-transition: width 0.5s cubic-bezier(.4,0,1,1);
+    -moz-transition: width 0.5s cubic-bezier(.4,0,1,1);
+    -webkit-transition: width 0.5s cubic-bezier(.4,0,1,1);
+    transition: width 0.5s cubic-bezier(.4,0,1,1);
+}
+body > a:hover > span:first-of-type {
+    width: 225px;
+}
+
 .skype-button > .lwc-chat-button {
     background-color: #3f51b5;
 }
