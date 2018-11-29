@@ -61,6 +61,10 @@ body {
 }
 
 .fadeInUp {
+    -o-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
     -o-animation-name: fadeInUp;
     -o-animation-duration: 1s;
     -o-animation-fill-mode: both;
