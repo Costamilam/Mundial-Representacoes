@@ -69,9 +69,9 @@
     ?>
 </head>
 <body>
-    <span class="skype-button bubble" data-contact-id="patricia.mundial"></span>
+    <span class="skype-button bubble fadeInUp" data-contact-id="patricia.mundial"></span>
 
-    <a href="http://18.228.132.48/representada" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+    <a href="http://18.228.132.48/representada" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored fadeInUp">
         <i class="fas fa-sitemap"></i>
         <span>Sistema Interno</span>
     </a>

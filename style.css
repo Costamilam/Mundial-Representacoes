@@ -28,23 +28,6 @@ body {
     margin-bottom: 150px !important;
 }
 
-.fadeInUp {
-    -o-animation-name: fadeInUp;
-    -o-animation-duration: 1s;
-    -o-animation-fill-mode: both;
-    -o-animation-iteration-count: 1;
-    -moz-animation-name: fadeInUp;
-    -moz-animation-duration: 1s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-name: fadeInUp;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    -webkit-animation-iteration-count: 1;
-    animation-name: fadeInUp;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-}
 .mdl-card {
     -o-transition-duration: 1s;
     -o-transition-timing-function: ease-in-out;
@@ -76,14 +59,32 @@ body {
         animation-delay: 0.5s;
     }
 }
+
+.fadeInUp {
+    -o-animation-name: fadeInUp;
+    -o-animation-duration: 1s;
+    -o-animation-fill-mode: both;
+    -o-animation-iteration-count: 1;
+    -moz-animation-name: fadeInUp;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-iteration-count: 1;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
 @-o-keyframes fadeInUp {
     0% {
         opacity: 0;
-        -o-transform: translate3d(0,100%,0);
-        -ms-transform: translate3d(0,100%,0);
-        -moz-transform: translate3d(0,100%,0);
-        -webkit-transform: translate3d(0,100%,0);
-        transform: translate3d(0,100%,0);
+        -o-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
     }
     100% {
         opacity: 1;
@@ -97,11 +98,11 @@ body {
 @-moz-keyframes fadeInUp {
     0% {
         opacity: 0;
-        -o-transform: translate3d(0,100%,0);
-        -ms-transform: translate3d(0,100%,0);
-        -moz-transform: translate3d(0,100%,0);
-        -webkit-transform: translate3d(0,100%,0);
-        transform: translate3d(0,100%,0);
+        -o-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
     }
     100% {
         opacity: 1;
@@ -115,11 +116,11 @@ body {
 @-webkit-keyframes fadeInUp {
     0% {
         opacity: 0;
-        -o-transform: translate3d(0,100%,0);
-        -ms-transform: translate3d(0,100%,0);
-        -moz-transform: translate3d(0,100%,0);
-        -webkit-transform: translate3d(0,100%,0);
-        transform: translate3d(0,100%,0);
+        -o-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
     }
     100% {
         opacity: 1;
@@ -133,11 +134,11 @@ body {
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        -o-transform: translate3d(0,100%,0);
-        -ms-transform: translate3d(0,100%,0);
-        -moz-transform: translate3d(0,100%,0);
-        -webkit-transform: translate3d(0,100%,0);
-        transform: translate3d(0,100%,0);
+        -o-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
     }
     100% {
         opacity: 1;
@@ -184,6 +185,8 @@ figure {
 }
 
 body > a {
+    opacity: 0;
+    animation-delay: 3s;
     white-space: nowrap;
     line-height: 56px !important;
     position: fixed !important;
@@ -227,6 +230,10 @@ body > a:hover > span:first-of-type {
     width: 225px;
 }
 
+.skype-button {
+    opacity: 0;
+    animation-delay: 3s;
+}
 .skype-button > .lwc-chat-button {
     background-color: #3f51b5;
 }

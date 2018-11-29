@@ -1,4 +1,19 @@
+let counter = 0;
+
 function fade() {
+    if (counter === 15) {
+        if (window.removeEventListener) {
+            window.removeEventListener('scroll', fade);
+            window.removeEventListener('resize', fade);
+        } else if (window.detachEvent) {
+            window.detachEvent('onscroll', fade);
+            window.detachEvent('onresize', fade);
+        } else {
+            window.onscroll = null;
+            window.onresize = null;
+        }
+    }
+
     for (
         const element of document.querySelectorAll(`
             #layout-padding > article:not(:nth-child(5)):not(#mvv),
@@ -9,7 +24,9 @@ function fade() {
         const boundingClientRect = element.getBoundingClientRect();
 
         if (!element.classList.contains('fadeInUp') && boundingClientRect.top >= 0 && boundingClientRect.top <= window.innerHeight) {
-            element.classList.add('fadeInUp');
+            //element.classList.add('fadeInUp');
+            setTimeout(() => element.style.opacity = '1', 1000);
+            counter++;
         }
     }
 }
@@ -21,7 +38,7 @@ if (window.addEventListener) {
     window.addEventListener('resize', fade);
 } else if (window.attachEvent) {
     window.attachEvent('onscroll', fade);
-    window.attachEvent('resize', fade);
+    window.attachEvent('onresize', fade);
 } else {
     window.onscroll = fade;
     window.onresize = fade;
@@ -58,3 +75,9 @@ new Swiper('#carousel > .swiper-container', {
         paginationBulletMessage: 'Ir para o slide {{index}}'
     }
 });
+
+setTimeout(() => {
+    for (const element of document.querySelectorAll('.skype-button, body > a')) {
+        element.style.opacity = '1';
+    }
+}, 4000);
