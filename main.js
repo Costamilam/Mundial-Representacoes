@@ -1,5 +1,7 @@
 let counter = 0;
 
+const opacity = (element) => element.style.opacity = '1'
+
 function fade() {
     if (counter === 15) {
         if (window.removeEventListener) {
@@ -23,9 +25,9 @@ function fade() {
     ) {
         const boundingClientRect = element.getBoundingClientRect();
 
-        if (!element.classList.contains('fadeInUp') && boundingClientRect.top >= 0 && boundingClientRect.top <= window.innerHeight) {
-            //element.classList.add('fadeInUp');
-            setTimeout(() => element.style.opacity = '1', 1000);
+        if (!element.classList.contains('fadeInUp') && boundingClientRect.top >= 0 && boundingClientRect.top <= window.innerHeight - 50) {
+            element.classList.add('fadeInUp');
+            setTimeout(() => opacity(element), 1000);
             counter++;
         }
     }
