@@ -134,16 +134,13 @@
                         <img src="./images/product_yiming.png" alt="Yiming Parts">
                     </section>
                     <section class="swiper-slide">
-                        <img src="./images/product_metan.png" alt="Metan">
-                    </section>
-                    <section class="swiper-slide">
                         <img src="./images/product_brunko.png" alt="Brunko">
                     </section>
                     <section class="swiper-slide">
                         <img src="./images/product_ndflex.png" alt="NDflex">
                     </section>
                     <section class="swiper-slide">
-                        <img src="./images/product_fortmetal.png" alt="FortMetal">
+                        <img src="./images/product_brk.png" alt="BrasilKits BRK">
                     </section>
                 </section>
 
@@ -206,18 +203,6 @@
 
             <section class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-card mdl-shadow--4dp">
                 <figure class="mdl-card__media">
-                    <img class="article-image" src="./images/logo_metan.png" border="0" alt="">
-                </figure>
-                <section class="mdl-card__supporting-text">
-                    A Metan trabalha a mais de 40 anos com solida experiência no mercado de peças de reposição, na linha de cabeçotes Volkswagem.
-                </section>
-                <section class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./catalogos/metan.pdf" target="_blank">Ver Catálogo</a>
-                </section>
-            </section>
-
-            <section class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-card mdl-shadow--4dp">
-                <figure class="mdl-card__media">
                     <img class="article-image" src="./images/logo_brunko.jpeg" border="0" alt="">
                 </figure>
                 <section class="mdl-card__supporting-text">
@@ -242,15 +227,15 @@
                 </section>
             </section>
 
-            <section class="mdl-cell mdl-cell--6-col-desktop mdl-cell--3-offset-desktop mdl-cell--12-col-tablet mdl-card mdl-shadow--4dp">
+            <section class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-card mdl-shadow--4dp">
                 <figure class="mdl-card__media">
-                    <img class="article-image" src="./images/logo_fortmetal.png" border="0" alt="">
+                    <img class="article-image" src="./images/logo_brk.png" border="0" alt="">
                 </figure>
                 <section class="mdl-card__supporting-text">
-                    A FortMetal fabrica bandejas de suspensão dentro dos mais rígidos padrões de qualidade e com materiais de primeira linha.
+                    A BrasilKits nasce a partir do segmento de kits da Cequent (DHF) e continua no ramo automotivo visando qualidade e transparência com seus clientes.
                 </section>
                 <section class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="./catalogos/fortmetal.pdf" target="_blank">Ver Catálogo</a>
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://brasilkitsbrk.com.br/catalogo.html" target="_blank">Ver Catálogo</a>
                 </section>
             </section>
         </article>
