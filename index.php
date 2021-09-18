@@ -310,7 +310,7 @@
 
         <article class="mdl-mega-footer__bottom-section">
             <section style="text-align: center;" class="mdl-mega-footer__middle-section">
-                Developed by <a style="text-decoration: none; color: #FFFFFF;" href="https://costamilam.github.io">Guilherme Costamilam</a>
+                Developed by <a style="text-decoration: none; color: #FFFFFF;" href="https://costamilam.github.io">Costamilam</a>
             </section>
         </article>
     </footer>
