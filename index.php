@@ -251,6 +251,20 @@
             <section class="mdl-card__supporting-text">
                 <p>Solicite uma cotação ou tire suas dúvidas, será um prazer atende-lo.</p>
 
+                <p>
+                    <a href="tel:+555133929020">
+                        <i class="fa fa-phone mdl-mega-footer__social-btn"></i>
+                        (51) 3392-9020
+                    </a>
+                </p>
+
+                <p>
+                    <a href="mailto:mundialr@mundialr.com.br">
+                        <i class="fa fa-envelope mdl-mega-footer__social-btn"></i>
+                        mundialr@mundialr.com.br
+                    </a>
+                </p>
+
                 <form action="./" method="POST">
                     <section class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input class="mdl-textfield__input" type="text" id="name" name="name" required pattern="^[^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\],.]{2,}$">
@@ -297,14 +311,14 @@
             </section>
 
             <section style="padding-right: 50px;" class="mdl-mega-footer__right-section">
-                <span style="white-space: nowrap;">
+                <a href="mailto:mundialr@mundialr.com.br" style="white-space: nowrap;">
                     <i class="fa fa-envelope mdl-mega-footer__social-btn"></i>
                     mundialr@mundialr.com.br
-                </span>
-                <span style="white-space: nowrap;">
+                </a>
+                <a href="tel:+555133929020" style="white-space: nowrap;">
                     <i class="fa fa-phone mdl-mega-footer__social-btn"></i>
                     (51) 3392-9020
-                </span>
+                </a>
             </section>
         </article>
 

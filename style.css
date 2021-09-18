@@ -319,6 +319,11 @@ body > iframe {
     width: 95%;
     margin: auto;
 }
+#contact p a,
+#contact p i {
+    color: #3f51b5;
+    text-decoration: none;
+}
 #contact form {
     display: -ms-flexbox;
     display: -moz-box;
