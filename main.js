@@ -77,9 +77,3 @@ new Swiper('#carousel > .swiper-container', {
         paginationBulletMessage: 'Ir para o slide {{index}}'
     }
 });
-
-setTimeout(() => {
-    for (const element of document.querySelectorAll('.skype-button, body > a')) {
-        element.style.opacity = '1';
-    }
-}, 4000);

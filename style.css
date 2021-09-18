@@ -234,13 +234,6 @@ body > a:hover > span:first-of-type {
     width: 225px;
 }
 
-.skype-button {
-    opacity: 0;
-    animation-delay: 3s;
-}
-.skype-button > .lwc-chat-button {
-    background-color: #3f51b5;
-}
 body > iframe {
     display: none;
 }
@@ -394,10 +387,6 @@ footer {
 }
 .fa-instagram {
     background: #E1306C;
-    color: white;
-}
-.fa-skype {
-    background: #00aff0;
     color: white;
 }
 .fa-envelope, .fa-phone {

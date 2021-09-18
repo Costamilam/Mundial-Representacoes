@@ -8,14 +8,13 @@
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="facebook-domain-verification" content="e5cs2dwcb5gklvuppty8li47fz6xfs" />
     <link rel="icon" href="./images/icon_globe.ico">
 
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link type="text/css" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-red.min.css" />
     <script defer type="text/javascript" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
-    <script defer type="text/javascript" src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
 
     <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
@@ -73,7 +72,23 @@
     ?>
 </head>
 <body>
-    <span class="skype-button bubble fadeInUp" data-contact-id="patricia.mundial"></span>
+    <div id="fb-root"></div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "162742270964150");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function() { FB.init({ xfbml: true, version: 'v12.0' }); };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/pt_BR/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <a href="http://18.228.132.48/representada" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored fadeInUp">
         <i class="fas fa-sitemap"></i>
