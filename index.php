@@ -292,8 +292,8 @@
     <footer class="mdl-mega-footer">
         <article class="mdl-mega-footer__top-section">
             <section class="mdl-mega-footer__left-section ">
-                <a title="Página no Facebook" class="fab fa-facebook-f mdl-mega-footer__social-btn" href="https://www.facebook.com/mundial.representacoes?hc_ref=ARSZ_HX42E256niFIY-K4n4HhQIMbymdGOTc6hzeDtjr3NjDOIuc4GUrzEQM8cpEUGg&fref=nf" target="_blank"></a>
-                <a title="Página no Linkedin" class="fab fa-linkedin-in mdl-mega-footer__social-btn" href="https://www.linkedin.com/company/mundial-representacoes/" target="_blank"></a>
+                <a title="Página no Facebook" class="fab fa-facebook-f mdl-mega-footer__social-btn" href="https://www.facebook.com/Mundial-Representa%C3%A7%C3%B5es-162742270964150" target="_blank"></a>
+                <a title="Página no Instagram" class="fab fa-instagram mdl-mega-footer__social-btn" href="https://www.instagram.com/mundialrep/" target="_blank"></a>
             </section>
 
             <section style="padding-right: 50px;" class="mdl-mega-footer__right-section">
