@@ -30,40 +30,44 @@
         use PHPMailer\PHPMailer\PHPMailer;
 
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
-            $mail = new PHPMailer();
-            $mail->isSMTP();
-            $mail->Host = '';
-            $mail->SMTPAuth = true;
-            $mail->Username = '';
-            $mail->Password = '';
-            $mail->SMTPSecure = 'tls';
-            $mail->Port = 587;
+            try {
+                $mail = new PHPMailer(true);
+                $mail->isSMTP();
+                $mail->SMTPAuth = true;
+                $mail->Host = '';
+                $mail->Username = '';
+                $mail->Password = '';
+                $mail->SMTPSecure = 'tls';
+                $mail->Port = 587;
 
-            $mail->setFrom('atendimento@mundialr.com.br', 'mundialr.com.br');
-            $mail->addAddress('atendimento@mundialr.com.br', 'Patricia');
-            $mail->addAddress('mundialr@mundialr.com.br', 'Carla');
+                $mail->setFrom('atendimento@mundialr.com.br', 'mundialr.com.br');
+                $mail->addAddress('atendimento@mundialr.com.br', 'Patricia');
+                $mail->addAddress('mundialr@mundialr.com.br', 'Carla');
 
-            $mail->isHTML(false);
-            $mail->Subject = 'Contato Site';
+                $mail->isHTML(false);
+                $mail->Subject = 'Contato Site';
 
-            $name = isset($_POST['name']) ? $_POST['name'] : '';
-            $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
-            $email = isset($_POST['email']) ? $_POST['email'] : '';
-            $city = isset($_POST['city']) ? $_POST['city'] : '';
-            $message = isset($_POST['message']) ? $_POST['message'] : '';
+                $name = isset($_POST['name']) ? $_POST['name'] : '';
+                $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
+                $email = isset($_POST['email']) ? $_POST['email'] : '';
+                $city = isset($_POST['city']) ? $_POST['city'] : '';
+                $message = isset($_POST['message']) ? $_POST['message'] : '';
 
-            $mail->Body = "
-                Nome: $name; 
-                Telefone: $phone; 
-                Email: $email; 
-                Cidade: $city; 
-                Mensagem: $message; 
-            ";
+                $mail->Body =
+                    "\nNome: $name;" +
+                    "\nTelefone: $phone;" +
+                    "\nEmail: $email;" +
+                    "\nCidade: $city;" +
+                    "\nMensagem: $message;"
+                ;
 
-            if($mail->send()) {
-                echo "<script>alert('Sua mensagem foi enviada!');</script>";
-            } else {
-                echo "alert('Algum erro ocorreu, sua mensagem não foi enviada! Entre em contato conosco pelo telefone (51) 3392-9020');</script>";
+                if($mail->send()) {
+                    echo "<script>alert('Sua mensagem foi enviada!');</script>";
+                } else {
+                    echo "<script>alert('Algum erro ocorreu, sua mensagem não foi enviada! Entre em contato conosco pelo telefone (51) 3392-9020');</script>";
+                }
+            } catch (Exception $e) {
+                echo "<script>alert('Algum erro ocorreu, sua mensagem não foi enviada! Entre em contato conosco pelo telefone (51) 3392-9020');</script>";
             }
         }
     ?>
